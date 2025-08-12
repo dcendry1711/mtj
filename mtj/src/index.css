@@ -45,3 +45,63 @@ header > img {
 
 /*TRAVELS SECTION */
 
+.new-travel-post {
+  display: flex;
+  margin: 1em 2em;
+  width: 90%;
+  border-bottom: 2px solid #F5F5F5;
+  padding-bottom: .5em;
+}
+
+.travel-location-photo {
+  width: 125px;
+  height: 168px;
+  border-radius: 8px;
+}
+
+.travel-info {
+  display: flex;
+  flex-direction: column;
+  padding: .8em;
+}
+
+.travel-info > h3 {
+  font-size: 1.5rem;
+  margin: .2em 0 .5em;
+}
+
+.travel-info > h4,p {
+  font-size: 0.65rem;
+}
+
+.travel-info > p {
+  margin: 2em 0;
+  line-height: 1.5;
+}
+
+.geolocation-container {
+  display: flex;
+  align-items: center;
+  gap: 1em;
+  font-size: 0.6rem;
+}
+
+.geolocation-container > h4 {
+  color: #918E9B;
+  text-decoration: underline;
+}
+
+.marker-section {
+  display: flex;
+  align-items: center;
+  gap: .2em;
+}
+
+.marker-section > img {
+  width: 9px;
+}
+
+.marker-section > h3 {
+  letter-spacing: 17%;
+}
+
