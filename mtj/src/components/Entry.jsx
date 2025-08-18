@@ -1,23 +1,20 @@
-export default function Entry(){
+export default function Entry({img,country,googleMapsLink,title,dates,text}){
     return(
         <section className="new-travel-post">
-            <img className="travel-location-photo" src="https://scrimba.com/links/travel-journal-japan-image-url" alt="Mount Fuji" />
+            <img className="travel-location-photo" src={img.src} alt={img.alt} />
             <div className="travel-info">
                 <div className="geolocation-container">
                     <div className="marker-section">
                         <img src="./marker.png" alt="Location Marker Icon" />
-                        <h3>JAPAN</h3>
+                        <h3>{country}</h3>
                     </div>
-                    <h4>View on Google Maps</h4>
+                    <a href={googleMapsLink}><h4>View on Google Maps</h4></a>
                 </div>
-                <h3>Mount Fuji</h3>
-                <h4>12 Jan, 2023 - 24 Jan, 2023</h4>
-                <p>
-                    Mount Fuji is the tallest mountain in Japan, standing at 3,776 meters (12,380 feet).
-                    Mount Fuji is the single most popular tourist site in Japan, for both Japanese and foreign tourists.
-                </p>
+                <h3>{title}</h3>
+                <h4>{dates}</h4>
+                <p>{text}</p>
             </div>
         </section>
         
     )
-}
+} 
